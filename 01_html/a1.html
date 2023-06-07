@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>gcn</title>
+		<link rel="stylesheet" href="mystyle.css"><!--引用css-->
+		<!--id 的语法是：写一个井号 (#)，后跟一个 id 名称。然后，在花括号 {} 中定义 CSS 属性。-->
+		<!--class 的语法是：写一个逗点 (.)，后跟一个 class 名称。然后，在花括号 {} 中定义 CSS 属性。-->
+		<style>
+			.aaa {
+				background-color:black;
+				color:white;
+				margin:50px;
+				padding:50px;
+			} 
+			#bbb {
+                background-color: lightblue;
+                color: black;
+                padding: 40px;
+                text-align: center;
+} 
+			</style>
+	</head>
+	<body style="background-color: aqua;"><!-- style属性下可用"brackground-color:"改变背景颜色 -->                             
+		<a href="http://www.w3school.com.cn"style="text-decoration:none"><h1>点我学习呀!</h1></a><!--HTML 链接是通过 <a href=""进行定义style="text-decoration:none"> 去掉链接的下划线-->
+		<br/><!-- <br/>表示换行 -->
+		<img src="tp/tp.jpg" width="412" height="291" /><!-- HTML 图像是通过 <img src=""> 标签进行定义的。	 -->
+		<p align="center" style="background-color: coral;">居中对齐并改变字体颜色</p><!-- align="center"居中对齐/style="background-color:"改变字体颜色 -->
+		<hr/> <!-- <hr/>创建水平线。 -->
+		<p style="text-align: center;">居中对齐</p><!-- style下的="text-align: center;"是居中对齐 -->
+		<h1 style="font-family: 'Courier New', Courier, monospace;">文本</h1><!--字体系列-->
+        <p style="font-family:arial;color:red;font-size:20px;">文本</p><!--颜色和字体尺寸-->
+		<h1>顾超楠</h1>
+        <p>顾超楠</p>
+		<b>顾超楠</b>
+		<p style="margin-left: 20px">
+			这是一段话
+			</p>
+			<div style="color: fuchsia;">
+				<h3>这也是一段话</h3>
+				<h2>这又是一段话</h2>
+			  </div>
+			  <h1 style="color: green;">绿色</h1>
+			  <p>some text. some text. some text...</p>
+			
+			 <div class="news">
+			  <aa>News headline 1</aa>
+			  <p>some text. some text. some text...</p>
+			</div>
+			
+			 <div class="news">
+			  <h2 style="color: violet;">News headline 2</h2>
+			  <p>some text. some text. some text...</p>
+			 </div>
+			 <p>
+				您也可以使用图像来作链接：
+				<a href=https://jiadian.jd.com>
+				<img border="0" src="tp/tp1.jpg">
+				</a>
+				</p>
+				<a href="http://www.w3school.com.cn/"target="_blank">guchaonan.com</a><!--target="blank"在新窗口打开此网址-->
+				<p>每个表格由 table 标签开始。</p>
+                <p>每个表格行由 tr 标签开始。</p>
+                <p>每个表格数据由 td 标签开始。</p>
+
+                <h4>一列：</h4>
+                <table border="1">
+                <tr>
+                <td>100</td>
+                </tr>
+                </table>
+
+                <h4>一行三列：</h4>
+                <table border="1">
+                <tr>
+                <td>100</td>
+                <td>200</td>
+                <td>300</td>
+                </tr>
+                </table>
+
+                <h4>两行三列：</h4>
+                <table border="1">
+                <tr>
+                <td>100</td>
+                <td>200</td>
+                <td>300</td>
+                </tr>
+                <tr>
+                <td>400</td>
+                <td>500</td>
+                <td>600</td>
+                </tr>
+                </table>
+				<h4>一个无序列表：</h4>
+                <ul>
+                <li>咖啡</li>
+                <li>茶</li>
+                <li>牛奶</li>
+                </ul>
+				<h4>一个有序列表：</h4>
+				<ol>
+				<li>咖啡</li>
+				<li>牛奶</li>
+				<li>茶</li>
+				</ol>
+				  
+				<ol start="50">
+				<li>咖啡</li>
+				<li>牛奶</li>
+				<li>茶</li>
+				</ol>
+				<div class="aaa">
+					<h1>London</h1>
+					<p>
+					London is the capital city of England. 
+					It is the most populous city in the United Kingdom, 
+					with a metropolitan area of over 13 million inhabitants.
+					</p>
+					</div> 
+					<h1 id="bbb">My Header</h1>
+					<h2 id="ccc">Hello World!</h2>
+                    <button onclick="displayResult()">点我改变文本</button><!--改变文本-->
+                    <script>
+                    function displayResult() {
+                    document.getElementById("ccc").innerHTML = "Have a nice day!";
+                                             }
+                    </script>
+					<a href="#">回到顶部</a>
+					<iframe src="https://www.bilibili.com/" width="800" height="600" frameborder="0"></iframe>
+	</body>
+</html>

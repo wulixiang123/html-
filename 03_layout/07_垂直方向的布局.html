@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .outer{
+            background-color: #bfa;
+            height: 600px;
+            /* 
+                默认情况下父元素的高度被内容撑开
+            */
+        }
+
+        .inner{
+            width: 100px;
+            background-color: yellow;
+            height: 100px;
+            margin-bottom: 100px;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            /* 
+                子元素是在父元素的内容区中排列的
+                    如果子元素的大小超过了父元素,则子元素会从父元素中溢出
+                    使用 overflow 属性来设置父元素如何处理溢出的子元素
+
+                可选值:
+                    visible 默认值 子元素会从父元素中溢出,在父元素外部的位置显示
+                    hidden 溢出的内容将会被裁剪不会被显示
+                    scroll 生成两个滚动条,通过滚动条来查看完整的内容
+                    auto  根据需要生成滚动条
+            */
+            overflow: auto;
+        }
+        .box2{
+            width: 100px;
+            height: 400px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="outer">
+        <div class="inner"></div>
+        <div class="inner"></div>
+    </div> -->
+    <div class="box1">
+        的好喝的咖啡和骄傲的急啊家的都叫我分厘卡尽快落地看完JFK就卡夫卡看见立刻附件积分开发忽然救死扶伤解放军的数据分类发绝对是积分飞机发动机发的积分多少积分积分多少放寒假打算风景的房间房价多少发大家是否还记得双方的首发机会决定是否交罚款空间疯狂积分卡会计法就李开复莱卡徕卡积分了解萨芬离开家离开家发离开解放了是否连连看案件积分离开离开就离开房间返还甲方
+        <!-- <div class="box2"></div> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../03_layout/css/reset.css">
+    <style>
+        /* 设置dht的大小 */
+        .dht{
+            /* 设置宽度和高度 */
+            width: 1210px;
+            height: 48px;
+             /* 设置背景颜色 */
+            background-color: #e8e7e3;
+            margin: 100px auto;
+        }
+         /* 设置dht中li */
+        .dht li{
+             /* 设置li向左浮动，以使菜单横向排列 */
+            float: left;
+             /* 设置li的高度 */
+            /* height: 48px; */
+            /* 将文字在父元素中垂直居中 */
+            line-height: 48px;
+        }
+        /* 设置a的样式 */
+        .dht a{
+            /* 将a转换为块元素 */
+            display: block;
+            /* 去除下划线 */
+            text-decoration: none;
+            /* 设置字体颜色 */
+            color: #777;
+             /* 修改字体大小 */
+            font-size: 18px;
+            
+            padding: 0 39px;
+        }
+        .dht li:last-child a{
+            padding: 0 42px 0 42px;
+        }
+        /* 设置鼠标移入的效果 */
+        .dht a:hover{
+            background-color: #3f3f3f;
+            color: #e8e7e3;
+        }
+    </style>
+</head>
+<body>
+     <!-- 创建导航条的结构 -->
+        <ul class="dht">
+            <li>
+                <a href="#">HTML/CSS</a>
+            </li>
+            <li>
+                <a href="#">Browser Side</a>
+            </li>
+            <li>
+                <a href="#">Server Side</a>
+            </li>
+            <li>
+                <a href="#">Programming</a>
+            </li>
+            <li>
+                <a href="#">XML</a>
+            </li>
+            <li>
+                <a href="#">Web Building</a>
+            </li>
+            <li>
+                <a href="#">Reference</a>
+            </li>
+        </ul>
+</body>
+</html>

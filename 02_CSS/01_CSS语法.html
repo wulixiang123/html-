@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="a.css">
+    <!-- 
+        网页分成三个部分
+        结构(HTML)
+        表现(CSS)
+        行为(javascript)
+    -->
+
+    <!-- 内部样式表
+        将样式编写到head中的style标签里
+        然后通过css的选择器来选中元素并为其设置各种样式
+        可以同时为多个标签设置样式,并且修改时只需要修改一处即可全部应用
+     -->
+     <!-- 外部样式表
+          可以将css样式编写到一个外部的css文件中,
+          然后通过link标签引入外部的css文件
+          外部样式表需要通过link标签进行引入,
+          意味着只要想使用这些样式的网页都可以对其进行引用
+          使样式可以在不同页面进行复用
+    -->
+    <style>
+        p{
+            color: aqua;
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1 style="color: red; font-size: 60px;">锄禾日当午,汗滴禾下土</h1> -->
+    <p>锄禾日当午</p>
+    <p>汗滴禾下土</p>
+</body>
+</html>

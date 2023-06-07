@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>京东顶部导航条</title>
+    <link rel="stylesheet" href="../03_layout/css/reset.css">
+    <link rel="stylesheet" href="../06_font&background/fa/css/all.css">
+    <style>
+        .clearfix::before,
+        .clearfix::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+        body{
+            font-size: 12px/2 微软雅黑 黑体;
+        }
+        /* 设置外部盒子的样式 */
+        .dahezi{
+            /* 设置宽度 */
+            width: 100%;
+            /* 设置行高解决高度塌陷 */
+            height: 30px;
+            /* 设置行高,没有设置高度 使文字垂直居中 */
+            line-height: 30px;
+            /* 设置背景颜色 */
+            background-color: #e3e4e5;
+            /* 设置下边框 */
+            border-bottom: 1px #ddd solid;
+        }
+        /* 设置内部盒子的样式 */
+        .xiaohezi{
+            /* 固定宽度 */
+            width: 1190px;
+            /* 设置水平居中 */
+            margin:  0 auto;
+            position: relative;
+        }
+         /* 设置字体样式 */
+        .xiaohezi a,
+        .xiaohezi span,
+        .xiaohezi i{
+            color: #999;
+            text-decoration: none;
+        }
+        .xiaohezi a:hover,
+        .xiaohezi a.hongse{
+            color: #f10215;
+        }
+        /* 设置zuoshang下的小图标 */
+        .zuoshang .fas{
+            color: #f10215;
+            font-size: 14px;
+        }
+
+        .zuoshang{
+            float: left;
+        }
+        /* 设置城市列表的效果 */
+        .zuoshang .cslb{
+            display: none;
+            width: 320px;
+            height: 436px;
+            background-color: white;
+            border: 1px solid rgb(204, 204, 204);
+            /* 设置绝对定位，使其不占据页面的位置 */
+            position: absolute;
+            top:31px;
+            z-index: 999;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, .2)
+        }
+        .zuoshang:hover .cslb{
+            display: block;
+        }
+        .beijing{
+            padding: 0 10px;
+
+            border: 1px solid transparent;
+            border-bottom: none;
+            
+
+            position: relative;
+
+            z-index: 9999;
+        }
+        .zuoshang:hover .beijing{
+            background-color: white;
+            border: 1px solid rgb(204, 204, 204);
+            border-bottom: none;
+            padding-bottom: 1px;
+        }
+        .youshang{
+            float: right;
+        }
+        .youshang li{
+            float: left;
+        }
+        .youshang .fengexian{
+            width: 1px;
+            height: 10px;
+            background-color: #999;
+            margin: 12px 12px 0;
+        }
+       
+    </style>
+</head>
+<body>
+    <!-- 创建外部盒子 -->
+    <div class="dahezi">
+        <!-- 创建内部盒子 -->
+        <div class="xiaohezi clearfix">
+            <!-- 左侧菜单 -->
+            <div class="zuoshang ">
+                <div class="beijing">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <a href="#">北京</a>
+                </div>
+
+                 <!-- 放置城市列表的div -->
+                 <div class="cslb">
+                
+                 </div>
+            </div>
+            <!-- 右侧菜单 -->
+            <ul class="youshang clearfix">
+                <li>
+                    <a href="#">你好，请登录</a>
+                    <a class="hongse" href="#">免费注册</a>
+                </li>
+                <!-- 分割线 -->
+                <li class="fengexian"></li>
+                <li><a href="#">我的订单</a></li>
+
+                <li class="fengexian"></li>
+                <li>
+                    <a href="#">我的京东</a>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+                <li class="fengexian"></li>
+                <li><a href="#">京东会员</a></li>
+                <li class="fengexian"></li>
+                <li>
+                    <a class="hongse" href="#">企业采购</a>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+                <li class="fengexian"></li>
+                <li>
+                    <span>客户服务</span>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+                <li class="fengexian"></li>
+                <li>
+                    <span>网站导航</span>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+                <li class="fengexian"></li>
+                <li>
+                    <span>手机京东</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
